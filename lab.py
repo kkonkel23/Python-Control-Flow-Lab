@@ -8,13 +8,13 @@
 # The letter x is a consonant
 # Hints: Use the in operator to check if a character is in another string For example, if some_char in 'abc':
 
-# letter  = input('Enter a letter in the alphabet: ')
-# low_let = letter.lower()
+letter  = input('Enter a letter in the alphabet: ')
+low_let = letter.lower()
 
-# if low_let == 'a' or low_let =='e' or low_let =='i' or low_let =='o' or low_let =='u':
-#     print(f'The letter {letter} is a vowel')
-# else:
-#     print(f'The letter {letter} is a consonant')
+if low_let == 'a' or low_let =='e' or low_let =='i' or low_let =='o' or low_let =='u':
+    print(f'The letter {letter} is a vowel')
+else:
+    print(f'The letter {letter} is a consonant')
 
 # exercise-02 Length of Phrase
 # Write the code that:
@@ -24,14 +24,14 @@
 # What you entered is xx characters long
 # Return to step 1, unless the word 'quit' was entered.
 
-# while True:
-#     phrase = input('Enter a word or phrase, enter quit to stop ')
-#     new_phrase = phrase.lower()
-#     if new_phrase == 'quit':
-#         print('Goodbye')
-#         break
-#     else:
-#         print(f'What you entered is {len(phrase)} characters long')
+while True:
+    phrase = input('Enter a word or phrase, enter quit to stop ')
+    new_phrase = phrase.lower()
+    if new_phrase == 'quit':
+        print('Goodbye')
+        break
+    else:
+        print(f'What you entered is {len(phrase)} characters long')
 
 
 # exercise-03 Calculate Dog Years
@@ -44,14 +44,14 @@
 # Prints the answer in the following format: The dog's age in dog years is xx
 # Hint: Use the int() function to convert the string returned from input() into an integer
 
-# age = int(input("Enter a dog's age in human years "))
+age = int(input("Enter a dog's age in human years "))
 
-# if age <= 2:
-#     dog_years = age * 10
-# else:
-#     dog_years = 20 + age * 7
+if age <= 2:
+    dog_years = age * 10
+else:
+    dog_years = 20 + age * 7
 
-# print("The dog's age in dog years is",dog_years)
+print("The dog's age in dog years is",dog_years)
 
 # exercise-04 What kind of Triangle?
 # Write the code that:
@@ -61,16 +61,16 @@
 # Print a message such as:
 # A triangle with sides of , & is a triangle
 
-# a = int(input('Enter the length of the first side of the triangle '))
-# b = int(input('Enter the length of the second side of the triangle '))
-# c = int(input('Enter the length of the third side of the triangle '))
+a = int(input('Enter the length of the first side of the triangle '))
+b = int(input('Enter the length of the second side of the triangle '))
+c = int(input('Enter the length of the third side of the triangle '))
 
-# if a == b and a == c and b == c:
-#     print(f'A triangle with sides of {a}, {b} and {c}, is an equalateral triangle')
-# elif a == b or a == c or b == c:
-#     print(f'A triangle with sides of {a}, {b} and {c}, is an isosceles triangle')
-# else:
-#     print(f'A triangle with sides of {a}, {b} and {c}, is an scalene triangle')
+if a == b and a == c and b == c:
+    print(f'A triangle with sides of {a}, {b} and {c}, is an equalateral triangle')
+elif a == b or a == c or b == c:
+    print(f'A triangle with sides of {a}, {b} and {c}, is an isosceles triangle')
+else:
+    print(f'A triangle with sides of {a}, {b} and {c}, is an scalene triangle')
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
